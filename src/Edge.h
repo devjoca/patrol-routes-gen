@@ -10,15 +10,16 @@
 #include "Node.h"
 
 class Edge {
+public:
     Node ini;
     Node end;
-public:
+    int nIncidents;
+
     Edge(const Node &ini, const Node &end);
-
-public:
     friend std::ostream &operator<<(std::ostream &os, const Edge &edge);
-
     double distance();
+
+    double distanceToPoint(Node node);
 };
 
 

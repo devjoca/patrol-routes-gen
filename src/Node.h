@@ -7,6 +7,9 @@
 
 
 #include <ostream>
+#include <vector>
+#include "Node.h"
+
 
 class Node {
 public:
@@ -16,6 +19,7 @@ public:
     friend std::ostream &operator<<(std::ostream &os, const Node &node);
 
     Node(double lat, double lng);
+
 };
 
 
