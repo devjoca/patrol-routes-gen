@@ -5,7 +5,6 @@
 
 using namespace std;
 
-
 int main() {
     vector<Edge> edges;
     vector<Node> incidents;
@@ -31,5 +30,6 @@ int main() {
     {
         cout << e.distance() << endl;
     }
+
     return 0;
 }
