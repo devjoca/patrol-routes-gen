@@ -3,6 +3,7 @@
 #include <cfloat>
 #include "Edge.h"
 #include "Grasp.h"
+#include "BestFirst.h"
 
 using namespace std;
 
@@ -50,7 +51,10 @@ int main() {
         }
     }
 
-    Grasp g = Grasp(iEdges);
+    Edge station = Edge(Node(4,2), Node(4,3));
+
+    BestFirst bf= BestFirst(iEdges, station);
+    bf.perform();
 
     return 0;
 }

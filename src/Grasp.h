@@ -12,6 +12,8 @@ class Grasp {
     std::vector<Edge>  vertex;
 public:
     Grasp(const std::vector<Edge> &vertex);
+
+    void perform();
 };
 
 
